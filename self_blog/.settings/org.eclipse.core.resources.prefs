@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//blog/admin.py=utf-8
+encoding//blog/models.py=utf-8
+encoding//blog/views.py=utf-8
+encoding//vmaig_auth/admin.py=utf-8
+encoding//vmaig_auth/forms.py=utf-8
+encoding//vmaig_auth/models.py=utf-8
+encoding//vmaig_auth/views.py=utf-8
+encoding//vmaig_blog/settings.py=utf-8
+encoding//vmaig_comments/admin.py=utf-8
+encoding//vmaig_comments/models.py=utf-8
+encoding//vmaig_comments/views.py=utf-8
+encoding//vmaig_system/models.py=utf-8

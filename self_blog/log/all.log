@@ -1,0 +1,2004 @@
+2016-04-20 15:52:58,430 [Dummy-1:2660] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-04-20 15:52:58,436 [Dummy-1:2660] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-04-20 15:53:03,446 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) QUERY = u'SELECT COUNT(*) AS "__count" FROM "blog_article" WHERE "blog_article"."status" = %s' - PARAMS = (0,); args=(0,)
+2016-04-20 15:53:03,448 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "vmaig_system_link"."id", "vmaig_system_link"."title", "vmaig_system_link"."url", "vmaig_system_link"."type", "vmaig_system_link"."create_time", "vmaig_system_link"."update_time" FROM "vmaig_system_link" ORDER BY "vmaig_system_link"."create_time" ASC' - PARAMS = (); args=()
+2016-04-20 15:53:03,451 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = (u'946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:03.450000'); args=('946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:03.450000')
+2016-04-20 15:53:03,457 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "vmaig_auth_vmaiguser"."id", "vmaig_auth_vmaiguser"."password", "vmaig_auth_vmaiguser"."last_login", "vmaig_auth_vmaiguser"."is_superuser", "vmaig_auth_vmaiguser"."username", "vmaig_auth_vmaiguser"."first_name", "vmaig_auth_vmaiguser"."last_name", "vmaig_auth_vmaiguser"."email", "vmaig_auth_vmaiguser"."is_staff", "vmaig_auth_vmaiguser"."is_active", "vmaig_auth_vmaiguser"."date_joined", "vmaig_auth_vmaiguser"."img", "vmaig_auth_vmaiguser"."intro" FROM "vmaig_auth_vmaiguser" WHERE "vmaig_auth_vmaiguser"."id" = %s' - PARAMS = (1,); args=(1,)
+2016-04-20 15:53:03,459 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT COUNT(*) AS "__count" FROM "vmaig_system_notification" WHERE ("vmaig_system_notification"."to_user_id" = %s AND "vmaig_system_notification"."is_read" = %s)' - PARAMS = (1, 0); args=(1, 0)
+2016-04-20 15:53:03,496 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "blog_nav"."id", "blog_nav"."name", "blog_nav"."url", "blog_nav"."status", "blog_nav"."create_time" FROM "blog_nav" WHERE "blog_nav"."status" = %s ORDER BY "blog_nav"."create_time" DESC' - PARAMS = (0,); args=(0,)
+2016-04-20 15:53:03,505 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "blog_carousel"."id", "blog_carousel"."title", "blog_carousel"."summary", "blog_carousel"."img", "blog_carousel"."article_id", "blog_carousel"."create_time" FROM "blog_carousel" ORDER BY "blog_carousel"."create_time" DESC' - PARAMS = (); args=()
+2016-04-20 15:53:03,509 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) QUERY = u'SELECT "blog_article"."id", "blog_article"."author_id", "blog_article"."category_id", "blog_article"."title", "blog_article"."en_title", "blog_article"."img", "blog_article"."tags", "blog_article"."summary", "blog_article"."content", "blog_article"."view_times", "blog_article"."zan_times", "blog_article"."is_top", "blog_article"."rank", "blog_article"."status", "blog_article"."pub_time", "blog_article"."create_time", "blog_article"."update_time" FROM "blog_article" WHERE "blog_article"."status" = %s ORDER BY "blog_article"."rank" ASC, "blog_article"."is_top" DESC, "blog_article"."pub_time" DESC, "blog_article"."create_time" DESC LIMIT 5' - PARAMS = (0,); args=(0,)
+2016-04-20 15:53:03,517 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "blog_category"."id", "blog_category"."name", "blog_category"."parent_id", "blog_category"."rank", "blog_category"."status", "blog_category"."create_time" FROM "blog_category" WHERE "blog_category"."id" = %s' - PARAMS = (1,); args=(1,)
+2016-04-20 15:53:04,026 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "vmaig_comments_comment"."id", "vmaig_comments_comment"."user_id", "vmaig_comments_comment"."article_id", "vmaig_comments_comment"."text", "vmaig_comments_comment"."create_time", "vmaig_comments_comment"."parent_id" FROM "vmaig_comments_comment" WHERE "vmaig_comments_comment"."article_id" = %s ORDER BY "vmaig_comments_comment"."create_time" DESC' - PARAMS = (3,); args=(3,)
+2016-04-20 15:53:04,036 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "blog_category"."id", "blog_category"."name", "blog_category"."parent_id", "blog_category"."rank", "blog_category"."status", "blog_category"."create_time" FROM "blog_category" WHERE "blog_category"."id" = %s' - PARAMS = (2,); args=(2,)
+2016-04-20 15:53:04,040 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "vmaig_comments_comment"."id", "vmaig_comments_comment"."user_id", "vmaig_comments_comment"."article_id", "vmaig_comments_comment"."text", "vmaig_comments_comment"."create_time", "vmaig_comments_comment"."parent_id" FROM "vmaig_comments_comment" WHERE "vmaig_comments_comment"."article_id" = %s ORDER BY "vmaig_comments_comment"."create_time" DESC' - PARAMS = (8,); args=(8,)
+2016-04-20 15:53:04,051 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "blog_category"."id", "blog_category"."name", "blog_category"."parent_id", "blog_category"."rank", "blog_category"."status", "blog_category"."create_time" FROM "blog_category" WHERE "blog_category"."id" = %s' - PARAMS = (2,); args=(2,)
+2016-04-20 15:53:04,055 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "vmaig_comments_comment"."id", "vmaig_comments_comment"."user_id", "vmaig_comments_comment"."article_id", "vmaig_comments_comment"."text", "vmaig_comments_comment"."create_time", "vmaig_comments_comment"."parent_id" FROM "vmaig_comments_comment" WHERE "vmaig_comments_comment"."article_id" = %s ORDER BY "vmaig_comments_comment"."create_time" DESC' - PARAMS = (7,); args=(7,)
+2016-04-20 15:53:04,065 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "blog_category"."id", "blog_category"."name", "blog_category"."parent_id", "blog_category"."rank", "blog_category"."status", "blog_category"."create_time" FROM "blog_category" WHERE "blog_category"."id" = %s' - PARAMS = (2,); args=(2,)
+2016-04-20 15:53:04,069 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "vmaig_comments_comment"."id", "vmaig_comments_comment"."user_id", "vmaig_comments_comment"."article_id", "vmaig_comments_comment"."text", "vmaig_comments_comment"."create_time", "vmaig_comments_comment"."parent_id" FROM "vmaig_comments_comment" WHERE "vmaig_comments_comment"."article_id" = %s ORDER BY "vmaig_comments_comment"."create_time" DESC' - PARAMS = (6,); args=(6,)
+2016-04-20 15:53:04,078 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "blog_category"."id", "blog_category"."name", "blog_category"."parent_id", "blog_category"."rank", "blog_category"."status", "blog_category"."create_time" FROM "blog_category" WHERE "blog_category"."id" = %s' - PARAMS = (2,); args=(2,)
+2016-04-20 15:53:04,082 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "vmaig_comments_comment"."id", "vmaig_comments_comment"."user_id", "vmaig_comments_comment"."article_id", "vmaig_comments_comment"."text", "vmaig_comments_comment"."create_time", "vmaig_comments_comment"."parent_id" FROM "vmaig_comments_comment" WHERE "vmaig_comments_comment"."article_id" = %s ORDER BY "vmaig_comments_comment"."create_time" DESC' - PARAMS = (2,); args=(2,)
+2016-04-20 15:53:04,101 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) QUERY = u'SELECT "blog_article"."id", "blog_article"."author_id", "blog_article"."category_id", "blog_article"."title", "blog_article"."en_title", "blog_article"."img", "blog_article"."tags", "blog_article"."summary", "blog_article"."content", "blog_article"."view_times", "blog_article"."zan_times", "blog_article"."is_top", "blog_article"."rank", "blog_article"."status", "blog_article"."pub_time", "blog_article"."create_time", "blog_article"."update_time" FROM "blog_article" ORDER BY "blog_article"."view_times" DESC LIMIT 10' - PARAMS = (); args=()
+2016-04-20 15:53:04,112 [Thread-2:5932] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "vmaig_comments_comment"."id", "vmaig_comments_comment"."user_id", "vmaig_comments_comment"."article_id", "vmaig_comments_comment"."text", "vmaig_comments_comment"."create_time", "vmaig_comments_comment"."parent_id" FROM "vmaig_comments_comment" ORDER BY "vmaig_comments_comment"."create_time" DESC LIMIT 10' - PARAMS = (); args=()
+2016-04-20 15:53:14,926 [Thread-23:6152] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = (u'946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:14.921000'); args=('946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:14.921000')
+2016-04-20 15:53:14,928 [Thread-23:6152] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) QUERY = u'SELECT "vmaig_auth_vmaiguser"."id", "vmaig_auth_vmaiguser"."password", "vmaig_auth_vmaiguser"."last_login", "vmaig_auth_vmaiguser"."is_superuser", "vmaig_auth_vmaiguser"."username", "vmaig_auth_vmaiguser"."first_name", "vmaig_auth_vmaiguser"."last_name", "vmaig_auth_vmaiguser"."email", "vmaig_auth_vmaiguser"."is_staff", "vmaig_auth_vmaiguser"."is_active", "vmaig_auth_vmaiguser"."date_joined", "vmaig_auth_vmaiguser"."img", "vmaig_auth_vmaiguser"."intro" FROM "vmaig_auth_vmaiguser" WHERE "vmaig_auth_vmaiguser"."id" = %s' - PARAMS = (1,); args=(1,)
+2016-04-20 15:53:15,065 [Thread-23:6152] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "vmaig_auth_vmaiguser"."id", "vmaig_auth_vmaiguser"."password", "vmaig_auth_vmaiguser"."last_login", "vmaig_auth_vmaiguser"."is_superuser", "vmaig_auth_vmaiguser"."username", "vmaig_auth_vmaiguser"."first_name", "vmaig_auth_vmaiguser"."last_name", "vmaig_auth_vmaiguser"."email", "vmaig_auth_vmaiguser"."is_staff", "vmaig_auth_vmaiguser"."is_active", "vmaig_auth_vmaiguser"."date_joined", "vmaig_auth_vmaiguser"."img", "vmaig_auth_vmaiguser"."intro", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "vmaig_auth_vmaiguser" ON ( "django_admin_log"."user_id" = "vmaig_auth_vmaiguser"."id" ) LEFT OUTER JOIN "django_content_type" ON ( "django_admin_log"."content_type_id" = "django_content_type"."id" ) WHERE "django_admin_log"."user_id" = %s ORDER BY "django_admin_log"."action_time" DESC LIMIT 10' - PARAMS = (1,); args=(1,)
+2016-04-20 15:53:18,930 [Thread-32:5140] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) QUERY = u'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = (u'946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:18.924000'); args=('946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:18.924000')
+2016-04-20 15:53:18,936 [Thread-32:5140] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "vmaig_auth_vmaiguser"."id", "vmaig_auth_vmaiguser"."password", "vmaig_auth_vmaiguser"."last_login", "vmaig_auth_vmaiguser"."is_superuser", "vmaig_auth_vmaiguser"."username", "vmaig_auth_vmaiguser"."first_name", "vmaig_auth_vmaiguser"."last_name", "vmaig_auth_vmaiguser"."email", "vmaig_auth_vmaiguser"."is_staff", "vmaig_auth_vmaiguser"."is_active", "vmaig_auth_vmaiguser"."date_joined", "vmaig_auth_vmaiguser"."img", "vmaig_auth_vmaiguser"."intro" FROM "vmaig_auth_vmaiguser" WHERE "vmaig_auth_vmaiguser"."id" = %s' - PARAMS = (1,); args=(1,)
+2016-04-20 15:53:18,982 [Thread-32:5140] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "vmaig_auth_vmaiguser"."id", "vmaig_auth_vmaiguser"."password", "vmaig_auth_vmaiguser"."last_login", "vmaig_auth_vmaiguser"."is_superuser", "vmaig_auth_vmaiguser"."username", "vmaig_auth_vmaiguser"."first_name", "vmaig_auth_vmaiguser"."last_name", "vmaig_auth_vmaiguser"."email", "vmaig_auth_vmaiguser"."is_staff", "vmaig_auth_vmaiguser"."is_active", "vmaig_auth_vmaiguser"."date_joined", "vmaig_auth_vmaiguser"."img", "vmaig_auth_vmaiguser"."intro", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "vmaig_auth_vmaiguser" ON ( "django_admin_log"."user_id" = "vmaig_auth_vmaiguser"."id" ) LEFT OUTER JOIN "django_content_type" ON ( "django_admin_log"."content_type_id" = "django_content_type"."id" ) WHERE "django_admin_log"."user_id" = %s ORDER BY "django_admin_log"."action_time" DESC LIMIT 10' - PARAMS = (1,); args=(1,)
+2016-04-20 15:53:21,108 [Thread-33:6288] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) QUERY = u'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = (u'946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:21.102000'); args=('946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:21.102000')
+2016-04-20 15:53:21,114 [Thread-33:6288] [django.db.backends:89] [utils:execute] [DEBUG]- (0.002) QUERY = u'SELECT "vmaig_auth_vmaiguser"."id", "vmaig_auth_vmaiguser"."password", "vmaig_auth_vmaiguser"."last_login", "vmaig_auth_vmaiguser"."is_superuser", "vmaig_auth_vmaiguser"."username", "vmaig_auth_vmaiguser"."first_name", "vmaig_auth_vmaiguser"."last_name", "vmaig_auth_vmaiguser"."email", "vmaig_auth_vmaiguser"."is_staff", "vmaig_auth_vmaiguser"."is_active", "vmaig_auth_vmaiguser"."date_joined", "vmaig_auth_vmaiguser"."img", "vmaig_auth_vmaiguser"."intro" FROM "vmaig_auth_vmaiguser" WHERE "vmaig_auth_vmaiguser"."id" = %s' - PARAMS = (1,); args=(1,)
+2016-04-20 15:53:24,299 [Thread-34:1512] [django.db.backends:89] [utils:execute] [DEBUG]- (0.003) QUERY = u'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = (u'946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:24.293000'); args=('946wiragyhac0vxozu3gdgfdb1hn5se1', u'2016-04-20 07:53:24.293000')
+2016-04-20 15:53:24,305 [Thread-34:1512] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "vmaig_auth_vmaiguser"."id", "vmaig_auth_vmaiguser"."password", "vmaig_auth_vmaiguser"."last_login", "vmaig_auth_vmaiguser"."is_superuser", "vmaig_auth_vmaiguser"."username", "vmaig_auth_vmaiguser"."first_name", "vmaig_auth_vmaiguser"."last_name", "vmaig_auth_vmaiguser"."email", "vmaig_auth_vmaiguser"."is_staff", "vmaig_auth_vmaiguser"."is_active", "vmaig_auth_vmaiguser"."date_joined", "vmaig_auth_vmaiguser"."img", "vmaig_auth_vmaiguser"."intro" FROM "vmaig_auth_vmaiguser" WHERE "vmaig_auth_vmaiguser"."id" = %s' - PARAMS = (1,); args=(1,)
+2016-04-20 15:53:24,351 [Thread-34:1512] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) QUERY = u'SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "vmaig_auth_vmaiguser"."id", "vmaig_auth_vmaiguser"."password", "vmaig_auth_vmaiguser"."last_login", "vmaig_auth_vmaiguser"."is_superuser", "vmaig_auth_vmaiguser"."username", "vmaig_auth_vmaiguser"."first_name", "vmaig_auth_vmaiguser"."last_name", "vmaig_auth_vmaiguser"."email", "vmaig_auth_vmaiguser"."is_staff", "vmaig_auth_vmaiguser"."is_active", "vmaig_auth_vmaiguser"."date_joined", "vmaig_auth_vmaiguser"."img", "vmaig_auth_vmaiguser"."intro", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "vmaig_auth_vmaiguser" ON ( "django_admin_log"."user_id" = "vmaig_auth_vmaiguser"."id" ) LEFT OUTER JOIN "django_content_type" ON ( "django_admin_log"."content_type_id" = "django_content_type"."id" ) WHERE "django_admin_log"."user_id" = %s ORDER BY "django_admin_log"."action_time" DESC LIMIT 10' - PARAMS = (1,); args=(1,)
+[2016-04-20 16:42:42,562] [ERROR] base : Internal Server Error: /article/stock.html
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\blog\views.py", line 105, in get
+    article = self.queryset.get(en_title=en_title)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 338, in get
+    (self.model._meta.object_name, num)
+MultipleObjectsReturned: get() returned more than one Article -- it returned 2!
+[2016-04-20 16:42:42,562] [ERROR] base : Internal Server Error: /article/stock.html
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\blog\views.py", line 105, in get
+    article = self.queryset.get(en_title=en_title)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 338, in get
+    (self.model._meta.object_name, num)
+MultipleObjectsReturned: get() returned more than one Article -- it returned 2!
+[2016-04-20 16:43:37,917] [ERROR] base : Internal Server Error: /article/stock.html
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\blog\views.py", line 105, in get
+    article = self.queryset.get(en_title=en_title)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 338, in get
+    (self.model._meta.object_name, num)
+MultipleObjectsReturned: get() returned more than one Article -- it returned 2!
+[2016-04-20 16:43:37,917] [ERROR] base : Internal Server Error: /article/stock.html
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\blog\views.py", line 105, in get
+    article = self.queryset.get(en_title=en_title)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 338, in get
+    (self.model._meta.object_name, num)
+MultipleObjectsReturned: get() returned more than one Article -- it returned 2!
+[2016-04-21 16:46:49,944] [ERROR] base : Internal Server Error: /search/
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 164, in get_response
+    response = response.render()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\response.py", line 158, in render
+    self.content = self.rendered_content
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\response.py", line 133, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\response.py", line 88, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\response.py", line 78, in resolve_template
+    return loader.select_template(template, using=self.using)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loader.py", line 64, in select_template
+    return engine.get_template(template_name, dirs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\base.py", line 342, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\base.py", line 342, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\base.py", line 342, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loader_tags.py", line 180, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+TemplateSyntaxError: 'block' tag with name 'main' appears more than once
+[2016-04-21 16:46:49,944] [ERROR] base : Internal Server Error: /search/
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 164, in get_response
+    response = response.render()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\response.py", line 158, in render
+    self.content = self.rendered_content
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\response.py", line 133, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\response.py", line 88, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\response.py", line 78, in resolve_template
+    return loader.select_template(template, using=self.using)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loader.py", line 64, in select_template
+    return engine.get_template(template_name, dirs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\base.py", line 342, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\base.py", line 342, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\base.py", line 342, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\template\loader_tags.py", line 180, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+TemplateSyntaxError: 'block' tag with name 'main' appears more than once
+[2016-04-21 19:57:24,641] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[michaelchengjl@163.com]
+[2016-04-22 10:03:04,408] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:04:44,578] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:04:51,548] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:05:02,091] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:05:03,684] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:05:14,153] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:05:15,960] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:05:22,806] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:05:50,545] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 10:06:27,982] [ERROR] views : [UserControl]用户上传头像为空:[%s]
+[2016-04-22 15:15:33,690] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-22 15:18:26,016] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-22 15:19:39,167] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[michaelchengjl@163.com]
+[2016-04-22 15:19:49,848] [ERROR] views : [UserControl]用户注册邮件发送失败:[123]/[michaelchengjl@163.com]
+[2016-04-22 15:26:06,002] [ERROR] views : [UserControl]用户注册邮件发送失败:[123]/[michaelchengjl@163.com]
+[2016-04-22 15:26:44,345] [ERROR] views : [UserControl]用户注册邮件发送失败:[123]/[michalcjl@163.com]
+[2016-04-22 15:34:29,053] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-22 15:35:00,275] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-22 15:44:32,078] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-22 15:55:07,677] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 133
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:55:07,677] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 133
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:55:11,687] [ERROR] base : Internal Server Error: /user/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 133
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:55:11,687] [ERROR] base : Internal Server Error: /user/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 133
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:46,447] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:46,447] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:49,463] [ERROR] base : Internal Server Error: /article/stocks.html
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:49,463] [ERROR] base : Internal Server Error: /article/stocks.html
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:52,042] [ERROR] base : Internal Server Error: /news/
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:52,042] [ERROR] base : Internal Server Error: /news/
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:53,555] [ERROR] base : Internal Server Error: /news/
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:53,555] [ERROR] base : Internal Server Error: /news/
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:58,832] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 15:56:58,832] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 134
+    def register(self,request):
+    ^
+IndentationError: unexpected indent
+[2016-04-22 16:07:05,526] [ERROR] base : Internal Server Error: /usercontrol/register
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 40, in post
+    return self.register(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 145, in register
+    print form.password1
+AttributeError: 'VmaigUserCreationForm' object has no attribute 'password1'
+[2016-04-22 16:07:05,526] [ERROR] base : Internal Server Error: /usercontrol/register
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 40, in post
+    return self.register(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 145, in register
+    print form.password1
+AttributeError: 'VmaigUserCreationForm' object has no attribute 'password1'
+[2016-04-22 16:59:18,384] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 118
+    return HttpResponse(u"鍙戦€侀偖浠堕敊璇?\n娉ㄥ唽澶辫触", status=500)
+                                                                        ^
+IndentationError: unindent does not match any outer indentation level
+[2016-04-22 16:59:18,384] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 118
+    return HttpResponse(u"鍙戦€侀偖浠堕敊璇?\n娉ㄥ唽澶辫触", status=500)
+                                                                        ^
+IndentationError: unindent does not match any outer indentation level
+[2016-04-23 11:21:12,148] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-23 21:10:19,795] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-25 09:14:03,026] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-25 21:42:21,145] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-25 23:06:10,494] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 2, in <module>
+    from blog.views import (IndexView, ArticleView, AllView, SearchView,
+  File "E:\Workspace\vmaig_blog\blog\views.py", line 85, in <module>
+    class AboutView(BaseMixin,ListView):
+  File "E:\Workspace\vmaig_blog\blog\views.py", line 88, in AboutView
+    paginate_by = PAGE_NUM #鍒嗛〉--姣忛〉鐨勬暟鐩?NameError: name 'PAGE_NUM' is not defined
+[2016-04-25 23:06:10,494] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 2, in <module>
+    from blog.views import (IndexView, ArticleView, AllView, SearchView,
+  File "E:\Workspace\vmaig_blog\blog\views.py", line 85, in <module>
+    class AboutView(BaseMixin,ListView):
+  File "E:\Workspace\vmaig_blog\blog\views.py", line 88, in AboutView
+    paginate_by = PAGE_NUM #鍒嗛〉--姣忛〉鐨勬暟鐩?NameError: name 'PAGE_NUM' is not defined
+[2016-04-25 23:17:22,914] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 35, in <module>
+    url(r'^about/$',AboutView.as_view(), name='about-detail-view'),
+NameError: name 'AboutView' is not defined
+[2016-04-25 23:17:22,914] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 35, in <module>
+    url(r'^about/$',AboutView.as_view(), name='about-detail-view'),
+NameError: name 'AboutView' is not defined
+[2016-04-25 23:18:21,786] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 36, in <module>
+    url(r'^down/$',DownView.as_view(), name='down-detail-view'),
+NameError: name 'DownView' is not defined
+[2016-04-25 23:18:21,786] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 36, in <module>
+    url(r'^down/$',DownView.as_view(), name='down-detail-view'),
+NameError: name 'DownView' is not defined
+[2016-04-25 23:18:23,434] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 36, in <module>
+    url(r'^down/$',DownView.as_view(), name='down-detail-view'),
+NameError: name 'DownView' is not defined
+[2016-04-25 23:18:23,434] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 36, in <module>
+    url(r'^down/$',DownView.as_view(), name='down-detail-view'),
+NameError: name 'DownView' is not defined
+[2016-04-25 23:18:37,644] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 36, in <module>
+    url(r'^down/$',DownView.as_view(), name='down-detail-view'),
+NameError: name 'DownView' is not defined
+[2016-04-25 23:18:37,644] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 68, in <module>
+    url(r'', include('blog.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\blog\urls.py", line 36, in <module>
+    url(r'^down/$',DownView.as_view(), name='down-detail-view'),
+NameError: name 'DownView' is not defined
+[2016-04-26 10:43:30,230] [ERROR] base : Internal Server Error: /down/
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 329
+    '''
+    ^
+IndentationError: unexpected indent
+[2016-04-26 10:43:30,230] [ERROR] base : Internal Server Error: /down/
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 329
+    '''
+    ^
+IndentationError: unexpected indent
+[2016-04-26 10:43:42,530] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 329
+    '''
+    ^
+IndentationError: unexpected indent
+[2016-04-26 10:43:42,530] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 329
+    '''
+    ^
+IndentationError: unexpected indent
+[2016-04-26 10:45:47,865] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 389
+    def notification(self, request):
+    ^
+IndentationError: unexpected indent
+[2016-04-26 10:45:47,865] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 389
+    def notification(self, request):
+    ^
+IndentationError: unexpected indent
+[2016-04-26 10:50:17,013] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:17,013] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:22,045] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\xd0\xca:\xbc')
+[2016-04-26 10:50:22,045] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\xd0\xca:\xbc')
+[2016-04-26 10:50:24,262] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:24,262] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:24,262] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:24,262] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:31,714] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:32,665] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:31,714] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:50:32,665] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:52:29,243] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:52:29,243] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:52:32,223] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk 'n\xb7\x88\x94')
+[2016-04-26 10:52:32,223] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk 'n\xb7\x88\x94')
+[2016-04-26 10:52:33,559] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 314, in changetx
+    im = Image.open(path)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 2295, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file 'vmaig_auth/static/tx/tx_100x100_1.jpg'
+[2016-04-26 10:52:33,559] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 314, in changetx
+    im = Image.open(path)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 2295, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file 'vmaig_auth/static/tx/tx_100x100_1.jpg'
+[2016-04-26 10:52:34,750] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:52:34,750] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 320, in changetx
+    request.user.save()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 827, in _save_table
+    forced_update)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\base.py", line 877, in _do_update
+    return filtered._update(values) > 0
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\db\backends\sqlite3\base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+ProgrammingError: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings.
+[2016-04-26 10:56:26,835] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\x17r+\xbb')
+[2016-04-26 10:56:26,888] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\xfe\x13{`')
+[2016-04-26 10:56:26,835] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\x17r+\xbb')
+[2016-04-26 10:56:26,888] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\xfe\x13{`')
+[2016-04-26 10:56:26,937] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\xa5\xe5IU')
+[2016-04-26 10:56:26,937] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\xa5\xe5IU')
+[2016-04-26 10:56:30,022] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\x01\xec9\x17')
+[2016-04-26 10:56:30,022] [ERROR] base : Internal Server Error: /usercontrol/changetx
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 46, in post
+    return self.changetx(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 315, in changetx
+    out = im.resize((100, 100), Image.ANTIALIAS)
+  File "c:\anaconda2\lib\site-packages\PIL\Image.py", line 1526, in resize
+    self.load()
+  File "c:\anaconda2\lib\site-packages\PIL\ImageFile.py", line 199, in load
+    s = read(self.decodermaxblock)
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 565, in load_read
+    cid, pos, length = self.png.read()
+  File "c:\anaconda2\lib\site-packages\PIL\PngImagePlugin.py", line 121, in read
+    raise SyntaxError("broken PNG file (chunk %s)" % repr(cid))
+SyntaxError: broken PNG file (chunk '\x01\xec9\x17')
+[2016-04-26 20:04:20,990] [ERROR] base : Internal Server Error: /usercontrol/register
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 37, in post
+    return self.register(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 90, in register
+    if form.is_valid():
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\forms\forms.py", line 184, in is_valid
+    return self.is_bound and not self.errors
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\forms\forms.py", line 176, in errors
+    self.full_clean()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\forms\forms.py", line 392, in full_clean
+    self._clean_fields()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\forms\forms.py", line 410, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "E:\Workspace\vmaig_blog\vmaig_auth\forms.py", line 65, in clean_username
+    VmaigUser.get(username=username)
+AttributeError: type object 'VmaigUser' has no attribute 'get'
+[2016-04-26 20:04:20,990] [ERROR] base : Internal Server Error: /usercontrol/register
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 37, in post
+    return self.register(request)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 90, in register
+    if form.is_valid():
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\forms\forms.py", line 184, in is_valid
+    return self.is_bound and not self.errors
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\forms\forms.py", line 176, in errors
+    self.full_clean()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\forms\forms.py", line 392, in full_clean
+    self._clean_fields()
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\forms\forms.py", line 410, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "E:\Workspace\vmaig_blog\vmaig_auth\forms.py", line 65, in clean_username
+    VmaigUser.get(username=username)
+AttributeError: type object 'VmaigUser' has no attribute 'get'
+[2016-04-26 20:05:29,296] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl]/[2953017107@qq.com]
+[2016-04-26 20:38:35,596] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl123]/[2953017107@qq.com]
+[2016-04-26 20:53:52,467] [ERROR] views : [UserControl]用户注册邮件发送失败:[cjl123]/[2953017107@qq.com]
+[2016-04-27 11:07:14,927] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 112
+    send_mail(title, message, 'michaelchengjl@163.com', ['380778960@qq.com'])
+    ^
+IndentationError: unexpected indent
+[2016-04-27 11:07:14,927] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 112
+    send_mail(title, message, 'michaelchengjl@163.com', ['380778960@qq.com'])
+    ^
+IndentationError: unexpected indent
+[2016-04-27 11:07:16,434] [ERROR] base : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 112
+    send_mail(title, message, 'michaelchengjl@163.com', ['380778960@qq.com'])
+    ^
+IndentationError: unexpected indent
+[2016-04-27 11:07:16,434] [ERROR] base : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 112
+    send_mail(title, message, 'michaelchengjl@163.com', ['380778960@qq.com'])
+    ^
+IndentationError: unexpected indent
+[2016-04-27 11:07:16,747] [ERROR] base : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 112
+    send_mail(title, message, 'michaelchengjl@163.com', ['380778960@qq.com'])
+    ^
+IndentationError: unexpected indent
+[2016-04-27 11:07:16,747] [ERROR] base : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_blog\urls.py", line 70, in <module>
+    url(r'', include('vmaig_auth.urls')),
+  File "c:\anaconda2\lib\site-packages\django-1.8.7-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\anaconda2\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\Workspace\vmaig_blog\vmaig_auth\urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "E:\Workspace\vmaig_blog\vmaig_auth\views.py", line 112
+    send_mail(title, message, 'michaelchengjl@163.com', ['380778960@qq.com'])
+    ^
+IndentationError: unexpected indent
+[2016-04-27 17:23:52,579] [ERROR] views : [ArticleView]访问不存在的文章:[add_blog]
+[2016-04-27 19:19:01,165] [ERROR] views : [ArticleView]访问不存在的文章:[add_blog]
